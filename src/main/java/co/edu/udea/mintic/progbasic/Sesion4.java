@@ -78,9 +78,9 @@ public class Sesion4 {
         // for, while
         int a = 0;
         int b = 1;
-        System.out.println(a);
-        System.out.println(b);
-        int c = a + b;
+        //System.out.println(a);
+        //System.out.println(b);
+        //int c = a + b;
         // for(inicializacion de variable de control ; condicion de parada ; incremento)
         /*for(int i = 0; i < 10; i++) {
             System.out.println(c);
@@ -98,14 +98,23 @@ public class Sesion4 {
         }*/
         
         // primeros 12 numeros de la serie de fibonacci
-        int i = 0;
+        /*int i = 0;
         while(i < 10) {
             System.out.println(c);
             a = b;
             b = c;
             c = a + b;
             i++;// si no se hace esto, se cae en un loop infinito
-        }
+        }*/
+        
+        // cuando hay acciones que se ejecutan al menos una vez
+        System.out.println(a);
+        do {
+            System.out.println(b);
+            int aux = a + b;
+            a = b;
+            b = aux;
+        } while (b < 100);
         
     }
     
