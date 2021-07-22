@@ -17,7 +17,7 @@ import co.edu.udea.mintic.progbasic.entidades.Persona;
  *
  * @author alexandervivas
  */
-public class Sesion6 {
+public class Sesion5 {
     
     public static void main(String[] args) {
         
