@@ -3,22 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package transporte;
+package figuras;
 
 /**
  *
  * @author alexandervivas
  */
-public class Matricula {
+public interface Imprimible {
     
-    private String id;
+    public abstract void imprimir();
     
-    public Matricula(String id) {
-        this.id = id;
-    }
-    
-    public String getId() {
-        return id;
-    }
+    public abstract void basura();
     
 }
