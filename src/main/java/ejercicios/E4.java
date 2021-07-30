@@ -8,6 +8,8 @@ package ejercicios;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Comparator;
+import java.util.stream.Stream;
 
 /**
  *
@@ -44,7 +46,7 @@ public class E4 {
         int [] vectorOrdenadoAscendentemente = ordenamientoAscendente(Arrays.copyOfRange(vector, 0, (vector.length / 2)));
         int [] vectorOrdenadoDescendentemente = ordenamientoDescendente(Arrays.copyOfRange(vector, (vector.length / 2), vector.length));
         
-        for(int i = 0; i < (vector.length / 2); i++) {
+        /*for(int i = 0; i < (vector.length / 2); i++) {
             // i = 4, vector.length = 10
             // vectorOrdenado[4] = vectorOrdenadoAscendentemente[4]
             // vectorOrdenado[9] = vectorOrdenadoDescendentemente[4]
@@ -53,7 +55,10 @@ public class E4 {
             
             vectorOrdenado[i] = vectorOrdenadoAscendentemente[i];
             vectorOrdenado[i + (vector.length / 2)] = vectorOrdenadoDescendentemente[i];
-        }
+        }*/
+        
+        System.arraycopy(vectorOrdenadoAscendentemente, 0, vectorOrdenado, 0, vectorOrdenadoAscendentemente.length);
+        System.arraycopy(vectorOrdenadoDescendentemente, 0, vectorOrdenado, vector.length / 2, vectorOrdenadoDescendentemente.length);
         
         return vectorOrdenado;
     }

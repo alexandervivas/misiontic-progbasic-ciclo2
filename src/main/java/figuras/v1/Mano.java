@@ -3,33 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package figuras;
+package figuras.v1;
 
 /**
  *
  * @author alexandervivas
  */
-public class Circulo extends Figura {
-    
-    private long radio;
-    
-    public Circulo(long radio) {
-        this.radio = radio;
-    }
-
-    @Override
-    public double getArea() {
-        return Math.PI * (Math.pow(radio, 2));
-    }
-
-    @Override
-    public double getPerimetro() {
-        return 0.0;
-    }
+public class Mano implements Imprimible {
 
     @Override
     public void imprimir() {
-        System.out.println("Soy un circulo con radio " + radio);
+        System.out.println("Hey, soy una mano pero igual me imprimo");
     }
 
     @Override

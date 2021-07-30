@@ -3,16 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package figuras;
+package figuras.v2;
 
 /**
  *
  * @author alexandervivas
  */
-public interface Imprimible {
+public abstract class Triangulo implements FiguraGeometrica {
+
+    @Override
+    public int getLados() {
+        return 3;
+    }
     
-    public abstract void imprimir();
     
-    public abstract void basura();
     
 }
