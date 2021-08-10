@@ -16,4 +16,8 @@ public class BicicletaUrbana extends Bicicleta {
         velocidad += 5;
     }
     
+    public void parar(){
+        velocidad = 0;
+    }
+    
 }
