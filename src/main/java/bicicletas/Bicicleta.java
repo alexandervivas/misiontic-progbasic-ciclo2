@@ -18,6 +18,7 @@ class Bicicleta {
     private String referencia;
     private String color;
     protected int velocidad;
+    protected int velocidad23;
     
     // metodo especial para crear objetos de esta clase: metodo constructor
     // metodo constructor: public NombreClase
